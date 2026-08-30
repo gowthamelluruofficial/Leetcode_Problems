@@ -18,7 +18,7 @@ class Solution {
                 mn_i = i;
             }
         }
-        int mn1 = (mx_i>mn_i)?mx_i+1:mn_i+1;
+        int mn1 = Math.max(mx_i,mn_i)+1;
         int m = Math.min(mx_i, mn_i);
         int y = Math.max(mx_i, mn_i);
         int mn2 = (m+1)+(n-y);
