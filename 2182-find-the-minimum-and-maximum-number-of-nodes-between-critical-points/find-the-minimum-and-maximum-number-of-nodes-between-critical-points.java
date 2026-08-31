@@ -10,9 +10,9 @@
  */
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
-        ListNode g = head;
-        g = g.next;
-        if(g.next==null) return new int[]{-1,-1};
+        // ListNode g = head;
+        // g = g.next;
+        // if(g.next==null) return new int[]{-1,-1};
         ArrayList<Integer> ans = new ArrayList<>();
         int val = head.val;
         ListNode temp = head.next;
