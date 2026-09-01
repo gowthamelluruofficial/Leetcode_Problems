@@ -1,6 +1,9 @@
 import java.math.BigInteger;
 class Solution {
     public int numTrees(int ni) {
+        //2nCn/(n+1)   -> unique no.of bsts
+        //nCr = n!/(r!(n-r)!)
+        //BigInteger is used because very big compared to int and long
         BigInteger val = BigInteger.valueOf(ni);
         BigInteger n = BigInteger.valueOf(2 * ni);
         BigInteger r = val;
