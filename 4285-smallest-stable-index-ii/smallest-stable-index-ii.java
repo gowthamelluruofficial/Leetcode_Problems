@@ -8,12 +8,12 @@ class Solution {
         int max = nums[0];
         int min = nums[n-1];
         for(int i=0; i<n; i++){
-            max = Math.max(max,nums[i]);
-            mx[i] = max;
             min = Math.min(min,nums[n-1-i]);
             mn[n-i-1] = min;
         }
         for(int i=0; i<n; i++){
+            max = Math.max(max,nums[i]);
+            mx[i] = max;
             int val = mx[i]-mn[i];
             if(val<=k) return i;
         }
