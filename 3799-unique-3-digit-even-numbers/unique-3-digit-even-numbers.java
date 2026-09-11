@@ -27,7 +27,7 @@ class Solution {
                         ans++;
                     }
                 }
-            }
+            }else continue;
             hm = new HashMap<>();
             for(int in:digits){
                 hm.put(in,hm.getOrDefault(in,0)+1);
